@@ -1,0 +1,30 @@
+{
+  "name": "sbrt-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./src/server.ts",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start"
+  },
+  "keywords": [
+    "sbrt",
+    "perguntas",
+    "respostas",
+    "técnicas"
+  ],
+  "author": "Daniella Angelos",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.5",
+    "nodemon": "^1.18.3"
+  },
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  }
+}
