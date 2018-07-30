@@ -9,7 +9,8 @@ export class Routes {
       })
     })               
 
-    app.route('/pergunta')
+    //Rotas relacionadas a questoes tecnicas
+    app.route('/questao')
     .get((req: Request, res: Response) => {
       res.status(200).send({
         message: 'GET request successfull.'
@@ -20,7 +21,7 @@ export class Routes {
         message: 'POST request successfull.'
       })
     })
-    app.route('/pergunta/:perguntaId')
+    app.route('/questao/:questaoId')
     .get((req: Request, res: Response) => {
       res.status(200).send({
         message: 'GET request successfull'

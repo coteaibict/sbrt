@@ -1,4 +1,5 @@
 import * as express from "express";
+import * as logger from 'morgan';
 import * as bodyParser from "body-parser";
 import {Routes} from "./routes/crmRoutes"
 
